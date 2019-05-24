@@ -1,9 +1,8 @@
 #How to Run
 
-- cd aside
-- cd mock-server
+- cd aside/mock-server
 - npm update
-- node start
+- npm start
 
 
 # Temy Test Environment
