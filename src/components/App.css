@@ -1,0 +1,17 @@
+ .App{
+ 	display: flex;
+ 	justify-content: center;
+ }
+
+ .required:after {
+  content:"*";
+  color:red;
+}
+
+.RegForm{
+	margin-right: 30px;
+	border: solid 1px;
+	padding: 10px 10px 10px 10px;
+}
+
+
