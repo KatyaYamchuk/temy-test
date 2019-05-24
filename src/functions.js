@@ -26,8 +26,21 @@ export const Unique = (arr, search_id) => {
 
 //Converting to a normal date format
 export const ConvertDate = (time) => {
-  let theyear = new Date(time).getFullYear();
-  let themonth = new Date(time).getMonth() + 1;
-  let thetoday = new Date(time).getDate();
-  return theyear+"."+themonth+"."+thetoday
+  let year = new Date(time).getFullYear();
+
+  let month = new Date(time).getMonth() + 1;
+  month = month < 10 ? "0"+month : month;
+
+  let today = new Date(time).getDate();
+  today = today < 10 ? "0"+today : today
+
+  let hours = new Date(time).getHours();
+  hours = hours < 10 ? "0"+hours : hours
+
+  let minutes = new Date(time).getMinutes();
+  minutes = minutes < 10 ? "0"+minutes : minutes
+
+  let seconds = new Date(time).getSeconds();
+  seconds = seconds < 10 ? "0"+seconds : seconds
+  return `${today}-${month}-${year} ${hours}:${minutes}:${seconds}`
 }
