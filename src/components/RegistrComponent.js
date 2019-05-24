@@ -160,7 +160,7 @@ class RegistrComponent extends Component {
 							name="name"
 							label="Name"
 							validator={this.validator}
-							valid_conditions='required|alpha'
+							valid_conditions='required|alpha_space'
 							handler={this.changeHandler}
 						/>
 						

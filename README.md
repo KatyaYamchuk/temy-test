@@ -1,3 +1,10 @@
+#How to Run
+
+- cd mock-server
+- npm update
+- node server.js
+
+
 # Temy Test Environment
 
 Basic environment of the test task includes mock-server with database for API calls and src folder for written code.
