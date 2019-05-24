@@ -1,6 +1,6 @@
 #How to Run
 
-- cd side
+- cd aside
 - cd mock-server
 - npm update
 - node start
